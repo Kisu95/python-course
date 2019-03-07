@@ -1,6 +1,9 @@
 def lowest(array):
     low = min(array)
     arrIndex = array.index(min(array))
+    for i in range(len(array)):
+        if array[i] == low and i != arrIndex:
+            print("Another lowest element index is: " + str(i))
     return low, arrIndex
 
 while True:
@@ -15,3 +18,4 @@ while True:
          print("You should enter at least 1 number.")
 
 print(lowest(numbers))
+#comment
