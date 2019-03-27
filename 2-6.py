@@ -6,7 +6,13 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from cs50 import get_int, get_float
 
-i = get_float("i: ")
+while True:     
+    try:
+        i = get_float("i: ")
+        assert(i > 0)
+        break
+    except AssertionError:
+        print("Number should be greater than 0")
 
 x_knots = np.linspace(-3*np.pi, 3*np.pi, 201)
 y_knots = np.linspace(-3*np.pi, 3*np.pi, 201)

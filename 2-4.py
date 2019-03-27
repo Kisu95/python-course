@@ -4,7 +4,6 @@ from cs50 import get_int
 x = get_int("x: ")
 y = get_int("y: ")
 while y == 0:
-    if y == 0:
-        y = get_int("y: ")
+    y = get_int("y: ")
 
 print('X is divisible by Y') if (x % y == 0) else print('X is not divisible by Y')
