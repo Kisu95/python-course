@@ -4,19 +4,9 @@ from decimal import *
 
 x = get_float("x: ")
 y = get_float("y: ")
-if y == 0:
-    y = get_float("y: ")
-else:
-    getcontext().prec = 50
-    x = Decimal(x)
-    y = Decimal(y)
-    a = x/y
-    print("x/y = ", "%.2f" % a)
-    #print("x/y = " , "%.5f" %a)
-    #print("x/y = ", "%.7f" % a)
-    #print("{0:.2f}".format(x/y))
-    #print("{0:.5f}".format(x/y))
-    #print("{0:.7f}".format(x/y))
 
-#print("{0:.2f}".format(x/y))
+while y == 0:
+    y = get_float("y: ")
+
+print("{0:.2f}".format(x/y))
 
