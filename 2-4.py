@@ -7,3 +7,5 @@ while y == 0:
     y = get_int("y: ")
 
 print('X is divisible by Y') if (x % y == 0) else print('X is not divisible by Y')
+
+#comment
